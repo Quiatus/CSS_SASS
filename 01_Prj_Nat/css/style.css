@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --clr-lightgreen: #7ed56f;
+    --clr-lightgreena: hsla(111, 55%, 64%, 0.8);
+    --clr-mediumgreen: #55c57a;
+    --clr-darkgreen: #28b485;
+    --clr-darkgreena: hsla(160, 64%, 43%, 0.8);
+    --clr-maintext: #777;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--clr-maintext);
+    padding: 2rem;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right, var(--clr-lightgreena), var(--clr-darkgreena)), url('../img/hero.jpg');
+    background-size: cover;
+    background-position: top;
+
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)
+}
