@@ -1,190 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-:root {
-    --clr-lightgreen: #7ed56f;
-    --clr-lightgreena: hsla(111, 55%, 64%, 0.8);
-    --clr-mediumgreen: #55c57a;
-    --clr-darkgreen: #28b485;
-    --clr-darkgreena: hsla(160, 64%, 43%, 0.8);
-    --clr-maintext: #777;
-    --clr-whitetext: #FFF;
-}
-
-*, 
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+*,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    line-height: 1.7;
-    color: var(--clr-maintext);
-    padding: 3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--clr-maintext);
+  padding: 3rem;
 }
 
 .header {
-    height: 95vh;
-    background-image: linear-gradient(to right, var(--clr-lightgreena), var(--clr-darkgreena)), url('../img/hero.jpg');
-    background-size: cover;
-    background-position: top;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%)
+  height: 95vh;
+  background-image: linear-gradient(to right, hsla(111, 55%, 64%, 0.8), hsla(160, 64%, 43%, 0.8)), url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 }
 
 .header__logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
 }
 
 .header__logo {
-    width: auto;
-    height: 3.5em;
+  width: auto;
+  height: 3.5em;
 }
 
 .header__text-box {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* 
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%)
-    */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+  */
 }
 
 .heading-primary {
-    color: var(--clr-whitetext);
-    text-transform: uppercase;
-    margin-bottom: 4rem;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
 }
 
 .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 400;
-    letter-spacing: 3.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.75rem;
-    animation-name: moveInRight;
-    animation-duration: 1s;
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  animation-name: moveInRight;
+  animation-duration: 1s;
 }
 
 .btn:link,
 .btn:visited {
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    border-radius: 4rem;
-    transition: all .2s;
-    position: relative;
-    font-size: 1.6rem
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 4rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
 }
 
 .btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
-    transform: translateY(-1px);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .btn--white {
-    background-color: var(--clr-whitetext);
-    color: var(--clr-maintext);
+  background-color: var(--clr-whitetext);
+  color: var(--clr-maintext);
 }
 
 .btn::after {
-    content: " ";
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-    border-radius: 4rem;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    transition: all .4s;
+  content: " ";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.4s;
 }
 
 .btn--white::after {
-    background-color: var(--clr-whitetext);
+  background-color: #FFF;
 }
 
 .btn:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-    opacity: 0;
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
 }
 
 .btn--animated {
-    animation: moveInTop .5s ease-out .5s;
-    animation-fill-mode: backwards;
+  animation: moveInTop 0.5s ease-out 0.5s;
+  animation-fill-mode: backwards;
 }
 
 @keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-
-    80% {
-        transform: translateX(1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
-
 @keyframes moveInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(10rem);
-    }
-
-    80% {
-        transform: translateX(-1rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
-@keyframes moveInTop{
-    0% {
-        opacity: 0;
-        transform: translateY(5rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
-
+/*# sourceMappingURL=style.css.map */
