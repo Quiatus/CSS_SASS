@@ -73,15 +73,12 @@
         top: -.4rem;
 
         &::after {
+            @include center;
             content: "";
             height: 1.3rem;
             width: 1.3rem;
             display: block;
             border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
             background-color: $color-lightgreen;
             opacity: 0;
             transition: opacity .2s;
