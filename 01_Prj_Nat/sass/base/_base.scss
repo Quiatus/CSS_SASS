@@ -9,8 +9,28 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+
+    @include mq(tab-land) {
+        font-size: 56.25%;
+    }
+
+    @include mq(tab-port) {
+        font-size: 50%;
+    }
+
+    @include mq(phone) {
+        font-size: 30%;
+    }
+
+    @include mq(desktop) {
+        font-size: 75%;
+    }
 }
 
 body {
     padding: 3rem;
+
+    @include mq(tab-port) {
+        padding: 0;
+    }
 }

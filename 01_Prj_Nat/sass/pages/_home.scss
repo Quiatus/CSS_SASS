@@ -2,36 +2,52 @@
     background-color: $color-verylightgray;
     padding: 25rem 0;
     margin-top: -15vh;
+
 }
 
 .section-features {
     padding: 20rem 0;
     background-image: linear-gradient(to right, rgba($color-lightgreen, .8), rgba($color-darkgreen, .8)), url('../img/nat-4.jpg');
     background-size: cover;
-    // clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
-    transform: skewY(-4deg);
-    margin-top: -7rem;
+    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    //transform: skewY(-4deg);
+    margin-top: -12rem;
     
     // select direct child
-    & > * {
-        transform: skewY(4deg);
-    }
+    // & > * {
+    //     transform: skewY(4deg);
+    // }
+
+   
 }
 
 .section-tours {
     background-color: $color-verylightgray;
-    padding: 25rem 0;
+    padding: 25rem 0 15rem 0;
     margin-top: -15vh;
+
+    @include mq(tab-port) {
+        padding: 20rem 0 10rem 0;
+    }
+
 }
 
 .section-stories {
     position: relative;
     padding: 15rem 0;
+
+    @include mq(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .section-book {
     padding: 15rem 0;
     background-image: linear-gradient(to right bottom, $color-lightgreen, $color-darkgreen);
+
+    @include mq(tab-port) {
+        padding: 10rem 0;
+    }
 }
 
 .book {
