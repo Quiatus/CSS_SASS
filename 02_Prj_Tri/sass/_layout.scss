@@ -3,6 +3,8 @@
     margin: 8rem auto;
     background-color: var(--color-grey-light-1);
     box-shadow: var(--shadow-dark);
+
+    // temp
     min-height: 50rem;
 }
 
@@ -10,7 +12,10 @@
     height: 7rem;
     background-color: var(--color-white);
     border-bottom: 1px solid var(--color-grey-light-2);
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.4rem;
 }
 
 .content {
