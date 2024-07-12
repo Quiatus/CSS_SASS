@@ -68,7 +68,6 @@
     display: flex;
     align-items: center;
     
-
     & > * {
         padding: 0 2rem;
         cursor: pointer;
@@ -199,7 +198,7 @@
 
 .overview {
     display: flex;
-    border-bottom: 1px solid var(--color-grey-light-2);
+    border-bottom: var(--border-line);
     align-items: center;
     
     &__heading {
@@ -247,6 +246,7 @@
     &__rating-average {
         font-size: 2.25rem;
         font-weight: 300;
+        margin-bottom: -.3rem;
     }
 
     &__rating-count {
