@@ -5,6 +5,11 @@
     grid-row: 1 / -1;
     display: flex;
     justify-content: center;
+    // transition: all .5s cubic-bezier(.43,.32,.11,1.05);
+
+    // &:hover {
+    //     transform: scaleX(5);
+    // }
 }
 
 .nav-btn {
